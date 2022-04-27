@@ -1,0 +1,96 @@
+body{
+	background-image:url(../ziyuan/images/BeiJing2.png) ;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll ;
+	background-size:cover;
+}
+.caidan{
+	width: 1px;
+	height: 1px;
+	margin-left: -700px;
+	margin-top: -100px;
+}
+.caidan:hover{
+	animation-name: AA;
+	animation-duration:9999999s;
+	animation-direction: alternate;
+}
+@keyframes AA{
+	0.00002%{
+		margin-left:-100px;
+	}
+	100%{
+		margin-left: -700px;
+	}
+}
+.ZuoTu{
+	width:850px;
+	height: 300px;
+}
+.NeiRong{
+	margin-left: 200px;
+	margin-top: -200px;
+	width: 100px;
+	height: 100px;
+	display: flex;
+}
+.NeiRongP{
+	color: white;
+	font-size: 20px;
+}
+.ZhongJianDa{
+	width: 500px;
+	height: 200px;
+	margin: 0 auto;
+	border-radius: 100px;
+	margin-top: 17%;
+}
+.JianDiv{
+	width: 400px;
+	margin: 0px auto;
+	font-size: 1px;
+	height: 35rem;
+	margin-left: 40px;
+}
+.JianDiv:hover{
+	animation-name: JianYiDong;
+	animation-duration: 9999999s;
+	animation-direction: alternate;
+}
+.JianXiaNeiRong{
+	margin-left: 40%;
+	width: 100px;
+	height: 100px;
+	opacity: 0%;
+	text-align:center;
+}
+.JianXiaHua{
+	height: 70px;
+}
+.JianDiv:hover ~ .JianXiaNeiRong{
+	opacity: 80%;
+	margin-left: 40%;
+	transition-duration: 4s;
+	margin-top: -50px;
+}
+@keyframes JianYiDong {
+	0.00001%{
+		margin-top: 50px;
+		opacity: 0%;
+		transform:rotate(0deg);
+	}
+	0.00003%{
+		margin-top: -150px;
+		opacity: 100%;
+		transform:rotate(70deg);
+	}
+	100%{
+		margin-top: 0px;
+	}
+}
+.JianTu{
+	margin-left: 60px;
+	height: 500px;
+	width: 100px;
+}
